@@ -13,6 +13,19 @@ We are currently covering following scenrio:
 - SUT is calling a class
 - SUT is call a context manager 
 
+## Directory structure
+
+
+* src
+    * sut.py (this is what we are writing unit tests for)
+    * nested_deps.py (nested class)
+    * external_call_func.py (this file contains a function which gets called by sut.py)
+    * context_manager_deps.py (this class contains a context manager which get called by sut.py)
+    * context 
+
+* tests
+    * test_deps.py 
+
 ## Can I contribute to it? 
 Yes
 
@@ -28,14 +41,4 @@ poetry install
 poetry run pytest .
 ```
 
-## Directory structure
 
-
-* src
-    * sut.py (this is what we are writing unit tests for)
-    * nested_deps.py (nested class)
-    * external_call_func.py (this file contains a function which gets called by sut.py)
-    * context_manager_deps.py (this class contains a context manager which get called by sut.py)
-    * context 
-
-* tests
