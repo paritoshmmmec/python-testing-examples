@@ -13,9 +13,9 @@ We are currently covering following scenrio:
 - SUT is calling a class
 - SUT is call a context manager 
 
-## Caution :triangular_flag_on_post: :triangular_flag_on_post: :triangular_flag_on_post:
+## Caution :loudspeaker: :loudspeaker:
 
-- Order of patching inwards to outwards, so first decorator value will be applied to first parameter, 
+- Order of patching is from inwards to outwards, so first decorator value will be applied to first parameter, next one will be applied to next parameter. (It will save a lot of headache)
 
 ```
 @patch.object('mock2')
