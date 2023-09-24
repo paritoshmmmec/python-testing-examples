@@ -13,6 +13,11 @@ We are currently covering following scenrio:
 - SUT is calling a class
 - SUT is call a context manager 
 
+## :triangular_flag_on_post: :triangular_flag_on_post: :triangular_flag_on_post:
+
+- Order of patching inwards to outwards, so first decorator value will be applied to first parameter 
+- The basic principle is that you patch where an object is looked up, which is not necessarily the same place as where it is defined.
+
 ## Directory structure
 
 
