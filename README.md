@@ -13,9 +13,17 @@ We are currently covering following scenrio:
 - SUT is calling a class
 - SUT is call a context manager 
 
-## :triangular_flag_on_post: :triangular_flag_on_post: :triangular_flag_on_post:
+## Caution :triangular_flag_on_post: :triangular_flag_on_post: :triangular_flag_on_post:
 
-- Order of patching inwards to outwards, so first decorator value will be applied to first parameter 
+- Order of patching inwards to outwards, so first decorator value will be applied to first parameter, 
+
+```
+@patch.object('mock2')
+@patch.object('mock1')
+def test(mock1, mock2):
+    return mock1, mock2
+```
+
 - The basic principle is that you patch where an object is looked up, which is not necessarily the same place as where it is defined.
 
 ## Directory structure
