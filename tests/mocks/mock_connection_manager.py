@@ -1,6 +1,6 @@
-class MockConnectionManager():
+class MockConnectionManager:
     def __init__(self):
-        print('Mock Connection Manager is getting Initialized')
+        print("Mock Connection Manager is getting Initialized")
 
     def __enter__(self):
         return self
